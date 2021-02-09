@@ -1,3 +1,5 @@
+let Container = ./Container.dhall
+
 let Defaults = ./Defaults.dhall
 
 let Env = ./Env.dhall
@@ -18,4 +20,5 @@ in  { name : Optional Text
     , steps : List Step
     , timeout-minutes : Optional Natural
     , `if` : Optional Text
+    , container : Optional Container
     }

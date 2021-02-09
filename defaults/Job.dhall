@@ -1,3 +1,5 @@
+let Container = ../types/Container.dhall
+
 let Defaults = ../types/Defaults.dhall
 
 let Env = ../types/Env.dhall
@@ -12,4 +14,5 @@ in  { name = None Text
     , defaults = None Defaults
     , timeout-minutes = None Natural
     , `if` = None Text
+    , container = None Container
     }
