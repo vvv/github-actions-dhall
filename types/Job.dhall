@@ -6,6 +6,8 @@ let Env = ./Env.dhall
 
 let RunsOn = ./RunsOn.dhall
 
+let Service = ./Service.dhall
+
 let Step = ./Step.dhall
 
 let Strategy = ./Strategy.dhall
@@ -21,4 +23,5 @@ in  { name : Optional Text
     , timeout-minutes : Optional Natural
     , `if` : Optional Text
     , container : Optional Container
+    , services : Optional (List { mapKey : Text, mapValue : Service })
     }

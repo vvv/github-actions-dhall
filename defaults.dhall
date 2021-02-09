@@ -1,9 +1,11 @@
 { Job =
-    ./defaults/Job.dhall sha256:718a4a398da808a94d8570fe40441443b2379394823cf7b9691e9fc72d5da8c1
+    ./defaults/Job.dhall sha256:c57992fad0522ae3bf33b7e36f344d2b4b27732fc14189bbd2f51763dd69d202
 , On =
     ./defaults/On.dhall sha256:5739587ac92ecba0e8d26cdfff2811b85b0ed8c0cf3fcf08dae55b2d96f6f324
 , Step =
     ./defaults/Step.dhall sha256:d65cc1e58f7721dcc11749bcb51b47ca94c33db04805477a48819a259ca68dfb
+, Service =
+    ./defaults/Service.dhall sha256:df4da0625e279bfe7965136bc8f19c469205929070ffcfc23155c0f667b5bf5d
 , Workflow =
     ./defaults/Workflow.dhall sha256:e559f5dd2c6cd6cf77473adb25766886f89b0bfdf00dfe6d1b7d9ff56789e374
 , Push =

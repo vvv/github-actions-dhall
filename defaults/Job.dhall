@@ -4,6 +4,8 @@ let Defaults = ../types/Defaults.dhall
 
 let Env = ../types/Env.dhall
 
+let Service = ../types/Service.dhall
+
 let Strategy = ../types/Strategy.dhall
 
 in  { name = None Text
@@ -15,4 +17,5 @@ in  { name = None Text
     , timeout-minutes = None Natural
     , `if` = None Text
     , container = None Container
+    , services = None (List { mapKey : Text, mapValue : Service })
     }
